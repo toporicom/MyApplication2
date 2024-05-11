@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="hi">Привет</string>
+    <string name="start">старт</string>
+    <string name="bye">До встречи</string>
+    <string name="count">Считать</string>
+    <string name="firstHint">Первое число</string>
+    <string name="secondHint">Второе число</string>
+    <string name="thirdHint">Третье число</string>
+</resources>

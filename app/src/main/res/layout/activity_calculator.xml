@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CalculatorActivity"
+    android:background="@color/pink">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Введите 3 числа для их умножения"
+        android:textSize="14pt"
+        android:textColor="@color/violet"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120pt"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100pt"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14pt"
+                android:gravity="center"
+                android:hint="@string/firstHint"
+                android:inputType="text" />
+
+            <EditText
+                android:textSize="14pt"
+                android:id="@+id/etThird"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/thirdHint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/etSecond"
+                android:layout_width="match_parent"
+                android:textSize="14pt"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/secondHint"
+                android:inputType="text" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Вы ввели не число!"
+        android:textColor="@color/red"
+        android:textSize="14pt"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16pt"
+        android:text="@string/count" />
+</LinearLayout>
